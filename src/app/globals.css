@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Outfit;
+}
+
+h1 {
+  color: #343A40;
+  font-size: 20px;
+  font-weight: 600;
+}
