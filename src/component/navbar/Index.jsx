@@ -33,7 +33,7 @@ const NavBar = () => {
                 <Image src={Logo} alt='logo' width={68} height={68} layout='fixed' />
                 <style.Heading className="ml-4">Logo</style.Heading>
             </style.ListItems>
-            <ul className="flex gap-6 cursor-pointer  ">
+            <ul className=" gap-6 cursor-pointer hidden lg:flex   ">
                 <li>Services</li>
                 <li>Our Team</li>
                 <li>Contact Us</li>

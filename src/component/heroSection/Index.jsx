@@ -8,13 +8,13 @@ import MapContent from './map/Index'
 
 const HeroComponent = () => {
     return (
-        <styled.MainContent >
+        <styled.MainContent  className='' >
             {CardDrtails && CardDrtails.map(products => (
                 <styled.CardContent key={products.id} className=''>
-                    <div className='  flex  ml-16 '>
-                        <div className="    ">
-                            <h1 className=' text-5xl  font-bold'>{products.Title}</h1>
-                            <h1 className=' text-5xl   font-bold'>{products.title1}</h1>
+                    <div className='  flex ml-16  '>
+                        <div className="  sm:mb-8  sm:ml-40 sm:mt-6 md:ml-0 md:mt-0 md:mb-0  sm:justify-center sm:items-center  ">
+                            <h1 className=' lg:text-5xl sm:text-3xl  font-bold'>{products.Title}</h1>
+                            <h1 className=' lg:text-5xl sm:text-3xl    font-bold'>{products.title1}</h1>
                             <p className=''>{products.Discription}</p>
                             <p>{products.Text}</p>
                             <p>{products.Text2}</p>
@@ -28,11 +28,15 @@ const HeroComponent = () => {
                             <button>{products.button}</button>
 
                             }
-                            
-                            <div className=' flex  gap-6 items-start'>
+
+                            <div className=''>
                                 {products.img1 &&
                                     <Image src={products.img2} />
                                 }
+                            </div>
+                            
+                            <div className=' flex gap-6 items-start'>
+                               
                                 <div >
                                     {products.phone &&
                                         <p>{products.phone}</p>}

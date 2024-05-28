@@ -5,9 +5,9 @@ const FormContent = () => {
     return (
 
         <styled.FormContent className=" class p-8">
-            <h1 className=" text-5xl font-bold mt-36 mb-6 text-center">Send an Inquiry</h1>
+            <h1 className=" text-5xl font-bold  mb-6 text-center">Send an Inquiry</h1>
             <form>
-                <div className=' flex gap-12'>
+                <div className=' lg:flex justify-between gap-5 sm:block'>
                     <div>
                         <label htmlFor="Name">Name: <span className=' text-red-500'>*</span></label>
                         <input

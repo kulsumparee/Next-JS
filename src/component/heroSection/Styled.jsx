@@ -3,10 +3,13 @@ import styled from "styled-components";
 export const MainContent = styled.div`
 width: 100%;
 display: grid;
-position: absolute;
 justify-content: center;
 align-items: center;
 grid-template-columns: repeat(2,1fr);
+ @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+
+ }
 
 `
 
@@ -22,9 +25,8 @@ export const CardContent = styled.div`
         font-weight: 600;
         border-radius: 10px;
     }
-    h1{
-       
-    }
+
+  
 `
 export const ImageContent = styled.div`
     img{
